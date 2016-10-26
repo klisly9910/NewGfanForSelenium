@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.newgfan.test.MainPage01">
+      <class name="com.newgfan.test.MainPage02">
         <methods>
           <include name="setUp"/>
           <include name="close"/>
-          <include name="topNav"/>
+          <include name="suspendMenu"/>
         </methods>
-      </class> <!-- com.newgfan.test.MainPage01 -->
+      </class> <!-- com.newgfan.test.MainPage02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
