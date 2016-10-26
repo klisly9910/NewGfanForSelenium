@@ -3,13 +3,6 @@
 <suite name="testgfan">
 	<test name="testLogin" preserve-order="true">
 		<classes>
-			<class name="com.newgfan.test.MainPage01" />
-			<methods>
-				<include name="topBanner" />
-				<include name="leftBanner" />
-				<include name="topLine" />
-				<include name="middleBanner" />
-			</methods>
 			<class name="com.newgfan.test.NavigatorTest" />
 			<method>
 				<include name="clickLogo" />
@@ -21,6 +14,24 @@
 				<include name="clickOffice" />
 				<include name="clickBBS" />
 			</method>
+			<class name="com.newgfan.test.MainPage01" />
+			<methods>
+				<include name="topBanner" />
+				<include name="leftBanner" />
+				<include name="topLine" />
+				<include name="middleBanner" />
+			</methods>
+			<class name="com.newgfan.test.MainPage02" />
+			<method>
+				<include name="pubTest" />
+				<include name="quickNews" />
+				<include name="threeBanner" />
+				<include name="topic" />
+				<include name="suspendMenu" />
+				<include name="" />
+				<include name="" />
+			</method>
+
 		</classes>
 
 	</test>
