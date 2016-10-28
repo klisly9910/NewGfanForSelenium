@@ -3,6 +3,12 @@
 <suite name="testgfan">
 	<test name="testLogin" preserve-order="true">
 		<classes>
+			<class name="com.newgfan.pub.Footer" />
+			<method>
+				<include name="getFooterTopLinks" />
+				<include name="getFriendlyLinks" />
+				<include name="getBottom" />
+			</method>
 			<class name="com.newgfan.test.NavigatorTest" />
 			<method>
 				<include name="clickLogo" />
@@ -28,8 +34,20 @@
 				<include name="threeBanner" />
 				<include name="topic" />
 				<include name="suspendMenu" />
-				<include name="" />
-				<include name="" />
+			</method>
+			<class name="com.newgfan.com.MainPage03" />
+			<method>
+				<include name="picLeft" />
+				<include name="picRight" />
+				<include name="picBelow" />
+				<include name="foceLeft" />
+				<include name="gameAppTop" />
+				<include name="gameAppPicLeft" />
+				<include name="gameAppPicRight" />
+				<include name="gameAppBelowPic" />
+				<include name="bbs" />
+				<include name="bbsPic" />
+				<include name="bbsJoin" />
 			</method>
 
 		</classes>
