@@ -36,7 +36,7 @@ public class MainPage02 {
 		driver.manage().window().maximize();
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void pubTest() {
 		// 机锋众测
 		WebElement pubTest = driver.findElement(By
@@ -54,7 +54,7 @@ public class MainPage02 {
 		driver.close();
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void quickNews() {
 		WebElement newsTitle = driver.findElement(By
 				.xpath(".//*[@id='iscroll-rightbox']/div[2]/h2/span"));
@@ -94,7 +94,7 @@ public class MainPage02 {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void threeBanner() {
 		List<WebElement> banners = driver.findElements(By
 				.xpath(".//*[@id='iscroll-rightbox']/div[3]/div"));
@@ -110,7 +110,7 @@ public class MainPage02 {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void topic() {
 		WebElement topicTitle = driver.findElement(By
 				.xpath(".//*[@id='iscroll-rightbox']/div[4]/h2/span"));
@@ -133,19 +133,25 @@ public class MainPage02 {
 	public void suspendMenu() {
 		List<WebElement> suspendMenu = driver.findElements(By
 				.xpath("html/body/div[2]/ul"));
+
 		List<WebElement> suspendMenus = driver.findElements(By
 				.xpath("html/body/div[2]/ul/li/a"));
 		List<String> menus = new ArrayList<String>();
+		// WebElement hotNews = driver.findElement(By
+		// .xpath(".//*[@id='nav01-tab']/a[1]"));
+		// String hotnewsTex = hotNews.getText();
 		for (int i = 0; i < suspendMenu.size(); i++) {
 			for (int j = 0; j < suspendMenus.size(); j++) {
 				String menuText = suspendMenus.get(j).getText();
 				menus.add(menuText);
-				Assert.assertEquals(true, suspendMenus.get(j).isEnabled());
-
+				// Assert.assertEquals(true, suspendMenus.get(j).isEnabled());
+				// suspendMenus.get(j).click();
+				// Assert.assertEquals(true, hotnewsTex.contains(menuText));
 			}
 			System.out.println("menus = " + menus);
 		}
-
+		
+		
 	}
 
 	@AfterMethod

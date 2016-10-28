@@ -11,12 +11,11 @@ public class SwitchToWindow {
 	public static String currentWindow;
 
 	public static void switchToWindow(WebDriver driver) {
-		// MainPage mainPage = new MainPage();
 		// 得到当前窗口的句柄
 		currentWindow = driver.getWindowHandle();
 		// 得到所有窗口的句柄
 		Set<String> handles = driver.getWindowHandles();
-		System.out.println("size :" + handles.size());
+		// System.out.println("size :" + handles.size());
 		Iterator<String> it = handles.iterator();
 		while (it.hasNext()) {
 			String handle = it.next();
